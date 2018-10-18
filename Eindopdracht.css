@@ -154,7 +154,58 @@ li:hover ul#submenu {
 
 @media screen and (max-width: 480px) {
     nav.dropdownmenu{
-        font: 10px;
+        
+        .dropdownmenu ul, .dropdownmenu li {
+
+            padding: 0px;
+            border: 1px solid black;
+        }
+        .dropdownmenu ul {
+            background: gray;
+            list-style: none;
+            width: 100%;
+        }
+        .dropdownmenu li {
+            float: left;
+            position: relative;
+            width:auto;
+        }
+        .dropdownmenu a {
+            background: rgb(9, 104, 180);
+            color: #FFFFFF;
+            display: block;
+            font: italic bold 12px/20px sans-serif;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: black;
+        }
+        
+        .dropdownmenu li:hover a {
+            background: #f00000;
+            text-decoration-style: black;
+        }
+        #submenu {
+            margin: 0px;
+            left: 0px;
+            right: 0px;
+            position: absolute;
+            top: 35px;
+            visibility: hidden;
+        }
+        li:hover ul#submenu {
+            top: 33px; 
+            visibility: visible;
+        }
+        #submenu li {
+            float: none;
+            width: 100%;
+        }
+        #submenu a:hover {
+            background: #DF4B05;
+        }
+        #submenu a {
+            background-color:#e41818;
+        }
     }
   }
   @media screen and (min-width: 480px) and (max-width: 1024px) {
